@@ -18,20 +18,20 @@ contract EtherRemoval {
     function getLength() public view returns (uint256) {
         return firstArray.length;
     }
-}
 
-function remove(uint256 _index) public {
-    require(_index < arr.length, "index out of bound");
+// function remove(uint256 _index) public {
+//     require(_index < arr.length, "index out of bound");
 
-    for (uint256 i = _index; i < arr.length - 1; i++) {
-        arr[i] = arr[i + 1];
-    }
-    arr.pop();
-}
+//     for (uint256 i = _index; i < arr.length - 1; i++) {
+//         arr[i] = arr[i + 1];
+//     }
+//     arr.pop();
+// }
 
-function remove(uint256 index) public {
-    // Move the last element into the place to delete
-    arr[index] = arr[arr.length - 1];
-    // Remove the last element
-    arr.pop();
+// function remove(uint256 index) public {
+//     // Move the last element into the place to delete
+//     arr[index] = arr[arr.length - 1];
+//     // Remove the last element
+//     arr.pop();
+// }
 }
